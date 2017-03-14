@@ -49,7 +49,7 @@ gulp.task('styles', function(){
     .pipe(sourcemaps.write())
     .pipe(rename({ suffix: '.min' }))
     .pipe(cleanCSS({compatibility: 'ie8'}))
-    .pipe( gulp.dest('static/css') )
+    .pipe( gulp.dest('deploy/css') )
     .pipe(browserSync.stream());
 });
 
